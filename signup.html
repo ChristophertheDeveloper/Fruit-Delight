@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="main">
+       <div class="left-col">
+           <div class="content-box1">
+               <h1 id="sign-up">Sign Up</h1>
+              <div class="form-wrap">
+               <form>
+                  <input type="text" placeholder="First Name" required>
+                  <input type="text" placeholder="Last Name" required>
+                  <input type="text" placeholder="Email Address" required>
+                  <input type="text" placeholder="Username" required>
+                  <input type="text" placeholder="Password" required>
+                  <input type="submit" value="Submit" id="form-button" onclick="myfunction()">
+                  </div>
+                  </form>
+           </div>
+           <a href="index.html"><img src="images/left-arrow.png" class="left-arrow"></a>
+       </div>
+       
+       <div class="right-col">
+           <div class="navbar">
+               <div class="search-box">
+                   <input type="text" placeholder="Find recipes, videos and more">
+                   <img src="images/search.png">
+               </div>
+               <ul>
+                   <li><a href="index.html"><img src="images/fill-tag.png">Home</a></li>
+                </ul>
+           </div>
+           <div class="more-items">
+               <a href="https://www.youtube.com/watch?v=HJNz6Ump_Js">
+               <img src="images/fruit1.png" onmouseover="imgReplace('images/fruit1.png')" onmouseout="imgOriginal('images/fruits.png')"></a>
+               <a href="https://www.youtube.com/watch?v=t-VZgFZ-HPQ">
+               <img src="images/fruit2.png" onmouseover="imgReplace('images/fruit2.png')" onmouseout="imgOriginal('images/fruits.png')"></a>
+               <a href="https://www.youtube.com/watch?v=J9Qox5N_4vI">    
+               <img src="images/fruit3.png" onmouseover="imgReplace('images/fruit3.png')" onmouseout="imgOriginal('images/fruits.png')"></a>
+           </div>
+           <img src="images/right-arrow.png" class="right-arrow">
+       </div>
+       
+       <img src="images/fruits.png" class="main-img">
+       
+   </div>
+   <script>
+       function imgReplace(swap){
+       document.querySelector('.main-img').src= swap;
+        }
+         function imgOriginal(back){
+       document.querySelector('.main-img').src= back;
+       }
+
+       function myfunction() {
+       alert("Thank you for signing up! To verify your membership pleace sign the terms and conditions acknowledgment form sent to your email address Once verified you will be able to search our entire catalog and directory of recipes.");
+    }
+
+   </script>
+
+   
+</body>
+</html>
